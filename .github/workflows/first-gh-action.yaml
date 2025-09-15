@@ -1,0 +1,15 @@
+name : First workflow sumon
+
+on: push
+
+jobs:
+ my-first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+     - name : print a message
+       run : echo "hello my first github action"
+
+     - name : check linting
+       run : echo "Linting checking.."
+     
